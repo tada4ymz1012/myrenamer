@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self';"/>
+        <title>myrenamer</title>
+        <link rel="stylesheet" href="lib/bootstrap.min.css">
+    </head>
+    <body>
+        <div id="app" class="container-fluid py-2">
+            <div class="row">
+                <div class="col">
+                    <input id="dirPath" type="text" class="form-control" readonly>
+                </div>
+                <div class="col-sm-2"><div class="d-grid">
+                    <button id="openBtn" class="btn btn-primary">open</button>
+                </div></div>
+                <div class="col-sm-2"><div class="d-grid">
+                    <button id="renameBtn" class="btn btn-primary">rename</button>
+                </div></div>
+            </div>
+            <div class="row py-2">
+                <div class="col">
+                    <p class="fw-bold">old</p>
+                    <ul id="oldList" class="list-group list-group-flush"></ul>
+                </div>
+                <div class="col">
+                    <p class="fw-bold">new</p>
+                    <ul id="newList" class="list-group list-group-flush"></ul>
+                </div>
+            </div>
+        </div>
+        <script src="lib/bootstrap.min.js"></script>
+        <script src="./renderer.js"></script>
+    </body>
+</html>
